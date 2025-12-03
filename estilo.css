@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+*{
+    margin: 0px auto;
+    padding: 0;
+}
+
+body{
+    font-family: "Orelega One", serif;
+    width: 100%;
+}
+
+
+header{
+    background-color: #72D9B8;
+        
+}
+/*cabeçalho*/
+
+.logo{
+    width: 95%;
+    text-align: left;
+}
+
+.caixa_logo{
+    width: 10%;
+}
+
+.caixa_frase{
+    text-align: center;
+}
+
+.caixa_frase h2{
+    color: rgba(0, 0, 0, 0.605);
+}
+
+
+/*menu*/
+
+.menu{
+    background-color: #005BC2;
+}
+
+.menu ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+
+.menu ul li a{
+    font-size: 25px;
+    color: #72D9B8;
+    text-decoration: none;
+    padding: 20px 100px;
+    display: inline-block;
+
+}
+
+section{
+    padding-top: 30px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*Quem Somos?*/
+
+h2{
+    padding: 10px 0px 10px 0px;
+    color: #005BC2;
+}
+
+#quem_somos img{
+    width: 946px;
+    height: 438px;
+    padding: 15px 0px 25px 0px ;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#quem_somos p{
+    padding: 5px 0px 10px 0px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+/*feedbacks*/
+
+#feedbacks{
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    align-items:center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+#imagens{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.slide{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.on{
+    opacity: 1;
+}
+
+#btn-ant, #btn-prox{
+    width: 50px;
+    height: 50px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#btn-ant img, #btn-prox img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#btn-ant{
+    transform: rotate(180deg);
+}
+
+/*Rodape*/
+
+footer{
+    margin-top: 70px;
+    padding-bottom: 25px;
+    background-color: #005BC2;
+    justify-items: center;
+    color: #72D9B8;
+}
+
+.icon a{
+    text-decoration: none;
+}
+
+.icon img{
+    padding: 5px 5px 5px 5px;
+    width: 40px;
+}
+
+/*Formulário*/
+
+.formulario h1, .formulario p{
+    color: #005BC2;
+    text-align: center;
+}
+
+.formulario p{
+    font-size: 20px;
+}
+
+.formulario table{
+    margin-top: 10px;
+}
+
+.formulario table, .formulario th{
+    border: 2px solid black;
+    padding: 1%;
+    border-spacing: 15px;
+}
+
+.btn{
+    text-align: center;
+    background-color: #005BC2;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: #005BC2;
+    background-color: #72D9B8;
+    cursor: pointer;
+}
+
+/*noticias*/
+
+.noticias{
+    align-items: center;
+    text-align: justify;
+    width: 75%;
+    margin-bottom: 3%;
+    padding: 0 1% 3% 1% ;
+    background-color: #72d9b870;
+    border-radius: 10px;
+}
+.noticias:hover{
+    background-color: #72D9B8;
+}
+.noticias h2{
+    text-align: center;
+}
+
+.noticias video{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+.noticias img{
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.noticias p{
+    padding: 5px 0px 10px 0px;
+    font-size: 25px;
+    text-align: justify;
+}
+

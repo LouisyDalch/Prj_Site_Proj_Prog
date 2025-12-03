@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Projeto Progressão">
+    <meta name="keywords" content="Projeto Social,ETEC,Pré-vestibulinho">
+    <meta name="author" content="Louisy Tomazi,Luana Brito,Yulianny Briceno">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Voluntaria-se</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <table class="logo"> 
+            <tr>
+                <th class="caixa_logo"><img src="imagens/logo.png"  title="Logo do PP"></th>
+                <th class="caixa_frase"><h2>A CHAVE PARA UMA EDUCAÇÃO BÁSICA DE QUALIDADE!!!</h2></th>
+            </tr>
+        </table> 
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="inscreva_se.html">Inscreva-se</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="voluntaria_se.html">Voluntaria-se</a></li>
+            </ul>        
+        </nav>
+    </header>
+    <section>
+         <form class="formulario">
+            <h1>Processo Seletivo de Membros</h1>
+            <p>Faça parte da nossa equipe!</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="nome">Nome Completo:</label></td>
+                        <td><input type="text" id="nome" name="nome" autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo:</td>
+                        <td>
+                            <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" id="feminino" name="sexo" value="feminino">
+                            <label for="feminino">Feminino</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefone">Telefone:</label></td>
+                        <td><input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}[0-9]{9}"
+                                placeholder="Ex: 11987654321" required></td>
+                    </tr>
+                    <tr>
+                        <td>Estuda ou estudou na ETESP?</td>
+                        <td>
+                            <input type="radio" id="etesp_sim" name="estudou_etesp" value="sim" required>
+                            <label for="etesp_sim">Sim</label>
+                            <input type="radio" id="etesp_nao" name="estudou_etesp" value="nao">
+                            <label for="etesp_nao">Não</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="nome-escola">Escola onde você cursa/cursou o ensino médio:</label></td>
+                        <td><input type="text" id="nome-escola" name="nome-escola" required></td>
+                    </tr>
+                    <tr>
+                        <td>Qual a sua situação atual no Ensino Médio?</td>
+                        <td>
+                            <input type="radio" id="em_1ano" name="situacao_em" value="1_ano_em" required>
+                            <label for="em_1ano">1º Ano do Ensino Médio</label><br>
+                            <input type="radio" id="em_2ano" name="situacao_em" value="2_ano_em">
+                            <label for="em_2ano">2º Ano do Ensino Médio</label><br>
+                            <input type="radio" id="em_3ano" name="situacao_em" value="3_ano_em">
+                            <label for="em_3ano">3º Ano do Ensino Médio</label><br>
+                            <input type="radio" id="em_formado" name="situacao_em" value="formado">
+                            <label for="em_formado">Já concluí o Ensino Médio</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Selecione a disciplina que deseja ministrar:</td>
+                        <td>
+                            <input type="radio" id="matematica" name="disciplinas" value="matematica">
+                            <label for="matematica">Matemática</label><br>
+                            <input type="radio" id="fisica" name="disciplinas" value="fisica">
+                            <label for="fisica">Física</label><br>
+                            <input type="radio" id="quimica" name="disciplinas" value="quimica">
+                            <label for="quimica">Química</label><br>
+                            <input type="radio" id="portugues" name="disciplinas" value="portugues">
+                            <label for="portugues">Português</label><br>
+                            <input type="radio" id="historia" name="disciplinas" value="historia">
+                            <label for="historia">História</label><br>
+                            <input type="radio" id="geografia" name="disciplinas" value="geografia">
+                            <label for="geografia">Geografia</label><br>
+                            <input type="radio" id="biologia" name="disciplinas" value="biologia">
+                            <label for="biologia">Biologia</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Como nos conheceu?</td>
+                        <td>
+                            <input type="radio" id="amigos" name="como-conheceu" value="amigos" required>
+                            <label for="amigos">Amigos/Família</label><br>
+                            <input type="radio" id="internet" name="como-conheceu" value="internet">
+                            <label for="internet">Internet/Redes Sociais</label><br>
+                            <input type="radio" id="pessoas" name="como-conheceu" value="pessoas">
+                            <label for="pessoas">Pessoas do projeto</label><br>
+                            <input type="radio" id="outro" name="como-conheceu" value="outro">
+                            <label for="outro">Outro</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button class="btn" type="reset">Limpar</button>
+                            <button class="btn" type="submit">Enviar Inscrição</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </section>
+    <footer>
+        <table>
+            <tr>
+                <td class="icon"><img src="imagens/icon_local.png" title="Localização"></td>
+                <td>Av. Tiradentes, 615 - Luz, São Paulo - SP, 01101-010</td>
+            </tr>
+        </table>
+            <p>Siga-nos nas redes sociais!</p>
+            <nav class="icon">
+                <a href="https://www.instagram.com/projetoprogressao">
+                    <img src="imagens/icon_instagram.png" title="Instagram"> 
+                </a>
+                <a href="https://www.facebook.com/projetoprogressao/?locale=pt_BR">
+                    <img src="imagens/icon_facebook.png" title="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/projetoprogressao/?originalSubdomain=br">
+                    <img src="imagens/icon_linkedin.png" title="Linkedin">
+                </a>
+            </nav>
+            <p>Copyright©2025 Louisy Tomazi | Luana Brito | Yulianny Briceno</p>
+    </footer>
+</body>
+</html>
